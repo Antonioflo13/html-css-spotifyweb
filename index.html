@@ -20,23 +20,37 @@
             
             <!-- nav -->
             <nav>
-                <a href=""><img src="img/logo.svg" alt="logo"></a>
-                <a href="#"><img class="icon" src="img/home.svg" alt="home"> Home</a>
-                <a href="#"><img class="icon" src="img/search.svg" alt="search"> Cerca</a>
-                <a href="#"><img class="icon" src="img/libreria.svg" alt="library"> La tua libreria</a>
-                <h4>PLAYLIST</h4>
-                <a href="#"><i id="icon" class="fa-2x fas fa-plus-square"></i> Crea Playlist</a>
-                <a href="#">Nome Playlist</a>
-                <a href="#">Nome Playlist</a>
-                <a href="#">Nome Playlist</a>
-                <a href="#">Nome Playlist</a>
-                <a href="#">Nome Playlist</a>
-                <a href="#">Nome Playlist</a>
-                <a href="#">Nome Playlist</a>
-
-                <div class="nav-end">
-                    <a href="#"><img  src="img/download.svg" alt="download"> Installa app</a>
-                    <a href="#"><img id="profile"  src="img/profile.svg" alt="profile"><h4>Antonio Flore</h4></a>
+                <div class="xs-menu">
+                    <a href="#"><img src="img/logo-small.svg" alt="logo"></a>
+                    <a href="#"><img class="icon" src="img/home.svg" alt="home"></a>
+                    <a href="#"><img class="icon" src="img/search.svg" alt="search"></a>
+                    <a href="#"><img class="icon" src="img/libreria.svg" alt="library"></a>
+                    <div class="nav-end">
+                        <a href="#"><img  src="img/download.svg" alt="download"></a>
+                        <a href="#"><img id="profile"  src="img/profile.svg" alt="profile"></a>
+                    </div>
+                </div>
+                <div class="md-menu">
+                    <a href="#"><img src="img/logo.svg" alt="logo"></a>
+                    <a href="#"><img class="icon" src="img/home.svg" alt="home"> Home</a>
+                    <a href="#"><img class="icon" src="img/search.svg" alt="search"> Cerca</a>
+                    <a href="#"><img class="icon" src="img/libreria.svg" alt="library"> La tua libreria</a>
+                    <h4>PLAYLIST</h4>
+                    <a href="#"><i id="icon" class="fa-2x fas fa-plus-square"></i> Crea Playlist</a>
+                    <div class="nav-center">
+                        <a href="#">Nome Playlist</a>
+                        <a href="#">Nome Playlist</a>
+                        <a href="#">Nome Playlist</a>
+                        <a href="#">Nome Playlist</a>
+                        <a href="#">Nome Playlist</a>
+                        <a href="#">Nome Playlist</a>
+                        <a href="#">Nome Playlist</a>
+                    </div>
+    
+                    <div class="nav-end">
+                        <a href="#"><img  src="img/download.svg" alt="download"> Installa app</a>
+                        <a href="#"><img id="profile"  src="img/profile.svg" alt="profile"><h4>Antonio Flore</h4></a>
+                    </div>
                 </div>
             </nav>
             <!-- /nav -->
@@ -66,7 +80,7 @@
 
             <!-- Recent-played -->
             <div class="wrapper-90">
-                <h1>Recently Played</h1>
+                <h2>Recently Played</h2>
                 <div class="main-list">
                     <div class="cover-container">
                         <div class="cover">
@@ -128,7 +142,7 @@
 
             <!-- Creat for -->
             <div class="wrapper-90">
-                <h1>Create for Antonio Flore</h1>
+                <h2>Create for Antonio Flore</h2>
                 <h5>Più ascolti, più accurati saranno i suggerimenti. </h5>
                 <div class="main-list">
                     <div class="cover-container">
@@ -153,7 +167,7 @@
 
             <!-- Artist most popular -->
             <div class="wrapper-90">
-                <h1>Artisti più popolari</h1>
+                <h2>Artisti più popolari</h2>
                 <h5>Più ascolti, più accurati saranno i suggerimenti. </h5>
                 <div class="main-list">
                     <div class="cover-container">
@@ -182,22 +196,54 @@
         <!-- footer -->
         <footer>
             <div>
-                <div class="p">
-                    <div class="play-left play-left-cover">
+                <div class="play">
+                    <div class="play-left-cover">
                         <img src="img/player_left.jpg" alt="cover">
+                    </div>
+                    <div class="play-left-text">
                         <h4>Sinister</h4>
                         <h5>Brano nome</h5>
+                    </div>
+                    <div>
+                        <i class="far fa-heart"></i>
+                        <i class="far fa-folder"></i>
                     </div>
                 </div>
             </div>
 
             <div>
+                <div class="play-center">
+                    <div class="play-center-row">
+                        <i class="fas fa-random"></i>
+                        <i class="fas fa-step-backward"></i>
+                        <i class="far fa-play-circle"></i>
+                        <i class="fas fa-step-forward"></i>
+                        <i class="fas fa-redo-alt"></i>
+                    </div>
+                    <div class="play-center-row">
+                        <span>0:25</span>
+                        <div class="progressive-bar">
+                            <div class="progressive"></div>
+                        </div>
+                        <span>4:35</span>
+                    </div>
 
+                </div>
             </div>
 
             <div>
-
+                <div id="left" class="play">
+                    <i class="fas fa-tv"></i>
+                    <i class="fas fa-list"></i>
+                    <i class="fas fa-volume-up"></i>
+                    <div class="progressive-bar">
+                        <div class="progressive"></div>
+                    </div>
+                </div>
             </div>
+            
+
+            
         </footer>
         <!-- /footer -->
     </div>
