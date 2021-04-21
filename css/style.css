@@ -24,6 +24,15 @@ a, h5 {
     text-decoration: none;
 }
 
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-flow: column;
+}
+
 /* hover */
 a:hover,
 i:hover {
@@ -33,7 +42,6 @@ i:hover {
 #icon:hover {
     color: white;
 }
-
 .fa-play-circle:hover {
     transform: scale(1.1);
 }
@@ -54,17 +62,9 @@ i:hover {
     background-color: #90D431;
 }
 
-/* #nav-menu a:focus {
-    border-bottom: 2px solid #90D431;
-} */
-
 /* body */
 body {
     font-family: 'Montserrat', sans-serif;
-}
-
-.container {
-    display: flex;
 }
 
 main {
@@ -76,8 +76,8 @@ main {
 /* header */
 
 /* nav */
-.md-menu,
-.xs-menu {
+.xs-menu,
+.md-menu {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -91,7 +91,8 @@ nav img {
     width: 110px;
 }
 
-nav a,
+.xs-menu a,
+.md-menu a,
 .md-menu h4 {
     font-size: 13px;
     line-height: 15px;
@@ -108,8 +109,8 @@ nav a,
     flex-direction: column;
     overflow-y: auto;
 }
-
-.icon,
+.xs-menu img,
+.md-menu img,
 .nav-end img,
 i {
     width: 20px;
@@ -174,6 +175,9 @@ i {
     color: white;
     background-color: #090B12;
     transition: transform 0.5s; 
+}
+#upgrade a:hover {
+    transform: scale(1.1);
 }
 
 /* nav-menu */
