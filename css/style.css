@@ -159,7 +159,7 @@ i {
     width: calc(100% - 230px);
     z-index: 1;
     height: 70px;
-    padding: 24px 10px 0 0;
+    padding: 16px 10px 0 0;
     text-align: right;
     background-color: rgba(0, 0, 0, 0.4);
 }
