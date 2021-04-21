@@ -17,54 +17,67 @@
 
             <!-- header -->
             <header>
-                
+
                 <!-- nav -->
-                
+                <!-- xs-menu -->
+                <div class="xs-menu">
 
-                    <!-- xs-menu -->
-                    <div class="xs-menu">
-                        <div class="nav-start">
-                            <a href="#"><img src="img/logo-small.svg" alt="logo"></a>
-                            <a href="#"><img class="icon" src="img/home.svg" alt="home"></a>
-                            <a href="#"><img class="icon" src="img/search.svg" alt="search"></a>
-                            <a href="#"><img class="icon" src="img/libreria.svg" alt="library"></a>
-                        </div>
-                        <div class="nav-end">
-                            <a href="#"><img  src="img/download.svg" alt="download"></a>
-                            <a href="#"><img id="profile"  src="img/profile.svg" alt="profile"></a>
-                        </div>
+                    <!-- nav-start -->
+                    <div class="flex-column">
+                        <a href="#"><img src="img/logo-small.svg" alt="logo"></a>
+                        <a href="#"><img src="img/home.svg" alt="home"></a>
+                        <a href="#"><img src="img/search.svg" alt="search"></a>
+                        <a href="#"><img src="img/libreria.svg" alt="library"></a>
                     </div>
-                    <!-- /xs-menu -->
+                    <!-- /nav-start -->
 
-                    <!-- md-menu -->
-                    <div class="md-menu">
-                        <div class="nav-start">
-                            <a href="#"><img src="img/logo.svg" alt="logo"></a>
-                            <a href="#"><img class="icon" src="img/home.svg" alt="home"> Home</a>
-                            <a href="#"><img class="icon" src="img/search.svg" alt="search"> Cerca</a>
-                            <a href="#"><img class="icon" src="img/libreria.svg" alt="library"> La tua libreria</a>
-                        </div>
-                        <h4>PLAYLIST</h4>
-                        <a href="#"><i id="icon" class="fa-2x fas fa-plus-square"></i> Crea Playlist</a>
-                        <div class="nav-center">
-                            <a href="#">Nome Playlist</a>
-                            <a href="#">Nome Playlist</a>
-                            <a href="#">Nome Playlist</a>
-                            <a href="#">Nome Playlist</a>
-                            <a href="#">Nome Playlist</a>
-                            <a href="#">Nome Playlist</a>
-                            <a href="#">Nome Playlist</a>
-                        </div>
-        
-                        <div class="nav-end">
-                            <a href="#"><img  src="img/download.svg" alt="download"> Installa app</a>
-                            <span></span>
-                            <a href="#"><img id="profile"  src="img/profile.svg" alt="profile"><h4>Antonio Flore</h4></a>
-                        </div>
+                    <!-- nav-end -->
+                    <div class="nav-end">
+                        <a href="#"><img src="img/download.svg" alt="download"></a>
+                        <a href="#"><img id="profile"  src="img/profile.svg" alt="profile"></a>
                     </div>
-                    <!-- /md-menu -->
+                    <!-- /nav-end -->
 
-                </nav>
+                </div>
+                <!-- /xs-menu -->
+
+                <!-- md-menu -->
+                <div class="md-menu">
+
+                    <!-- nav-start -->
+                    <div class="flex-column">
+                        <a href="#"><img id="logo" src="img/logo.svg" alt="logo"></a>
+                        <a href="#"><img src="img/home.svg" alt="home"> Home</a>
+                        <a href="#"><img src="img/search.svg" alt="search"> Cerca</a>
+                        <a href="#"><img src="img/libreria.svg" alt="library"> La tua libreria</a>
+                    </div>
+                    <!-- /nav-start -->
+
+                    <h4>PLAYLIST</h4>
+                    <a href="#"><i id="icon" class="fa-2x fas fa-plus-square"></i> Crea Playlist</a>
+                        
+                    <!-- nav-center -->
+                    <div class="flex-column nav-center">
+                        <a href="#">Nome Playlist</a>
+                        <a href="#">Nome Playlist</a>
+                        <a href="#">Nome Playlist</a>
+                        <a href="#">Nome Playlist</a>
+                        <a href="#">Nome Playlist</a>
+                        <a href="#">Nome Playlist</a>
+                        <a href="#">Nome Playlist</a>
+                    </div>
+                    <!-- /nav-center -->
+
+                    <!-- nav-end -->
+                    <div class="flex-column nav-end">
+                        <a href="#"><img  src="img/download.svg" alt="download"> Installa app</a>
+                        <span></span>
+                        <a href="#"><img id="profile"  src="img/profile.svg" alt="profile"><h4>Antonio Flore</h4></a>
+                    </div>
+                    <!-- /nav-end -->
+
+                </div>
+                <!-- /md-menu -->
                 <!-- /nav -->
                 
             </header>
@@ -75,12 +88,12 @@
 
                 <!-- upgrade -->
                 <div id="upgrade">
-                    <a id="active" href="#">EFFETTUA L'UPGRADE</a>
+                    <a href="#">EFFETTUA L'UPGRADE</a>
                 </div>
                 <!-- /upgrade -->
 
                 <!-- nav-menu -->
-                <div id="nav-menu">
+                <div id="nav-menu" class="flex">
                     <a href="#">IN EVIDENZA<span></span></a>
                     <a href="#">POADCAST<span></span></a>
                     <a href="#">CLASSIFICHE<span></span></a>
@@ -93,7 +106,7 @@
                 <!-- Main-list -->
                 <div class="wrapper-90">
                     <h2>Recently Played</h2>
-                    <div class="main-list">
+                    <div class="flex main-list">
                         <div class="cover-container">
                             <div class="cover">
                                 <div class="overlay">
@@ -174,7 +187,7 @@
                 <div class="wrapper-90">
                     <h2>Create for Antonio Flore</h2>
                     <h5>Più ascolti, più accurati saranno i suggerimenti. </h5>
-                    <div class="main-list">
+                    <div class="flex main-list">
                         <div class="cover-container">
                             <div class="cover">
                                 <div class="overlay">
@@ -205,7 +218,7 @@
                 <div class="wrapper-90">
                     <h2>Artisti più popolari</h2>
                     <h5>Più ascolti, più accurati saranno i suggerimenti. </h5>
-                    <div class="main-list">
+                    <div class="flex main-list">
                         <div class="cover-container">
                             <div class="cover">
                                 <div id="popular" class="overlay">
@@ -240,11 +253,11 @@
 
                 <!-- play-left -->
                 <div>
-                    <div class="play">
+                    <div class="flex play">
                         <div class="play-left-cover">
                             <img src="img/player_left.jpg" alt="cover">
                         </div>
-                        <div class="play-left-text">
+                        <div class="flex-column play-left-text">
                             <h4>Sinister</h4>
                             <h5>Brano nome</h5>
                         </div>
@@ -258,18 +271,18 @@
 
                 <!-- play-center -->
                 <div>
-                    <div class="play-center">
-                        <div class="play-center-row">
+                    <div class="flex-column play-center">
+                        <div class="flex play-center-row">
                             <a href="#"><i class="fas fa-random"></i></a>
                             <a href="#"><i class="fas fa-step-backward"></i></a>
                             <a href="#"><i class="far fa-play-circle"></i></a>
                             <a href="#"><i class="fas fa-step-forward"></i></a>
                             <a href="#"><i class="fas fa-redo-alt"></i></a>
                         </div>
-                        <div class="play-center-row">
+                        <div class="flex play-center-row">
                             <span>0:25</span>
                             <div class="progressive-bar">
-                                <div class="progressive">
+                                <div class="flex progressive">
                                     <div class="cursor"></div>
                                 </div>
                             </div>
@@ -281,7 +294,7 @@
 
                 <!-- play-right -->
                 <div>
-                    <div id="left" class="play">
+                    <div id="left" class="flex play">
                         <i class="fas fa-tv"></i>
                         <i class="fas fa-list"></i>
                         <i class="fas fa-volume-up"></i>

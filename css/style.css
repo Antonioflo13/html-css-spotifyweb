@@ -42,6 +42,8 @@ i:hover {
 #icon:hover {
     color: white;
 }
+
+#upgrade a:hover,
 .fa-play-circle:hover {
     transform: scale(1.1);
 }
@@ -50,9 +52,9 @@ i:hover {
     border:2px solid #90D431;
 }
 
-.nav-start a:nth-child(2):focus,
-.nav-start a:nth-child(3):focus,
-.nav-start a:nth-child(4):focus {
+.md-menu a:nth-child(2):focus,
+.md-menu a:nth-child(3):focus,
+.md-menu a:nth-child(4):focus {
     border-left: 2px solid #90D431;
 }
 
@@ -87,10 +89,6 @@ main {
     background-color: #000000;
 }
 
-nav img {
-    width: 110px;
-}
-
 .xs-menu a,
 .md-menu a,
 .md-menu h4 {
@@ -99,16 +97,10 @@ nav img {
     padding: 8px 20px;
 }
 
-.nav-start {
-    display: flex;
-    flex-direction: column;
+#logo {
+    width: 100px;
 }
 
-.nav-center {
-    display: flex;
-    flex-direction: column;
-    overflow-y: auto;
-}
 .xs-menu img,
 .md-menu img,
 .nav-end img,
@@ -118,9 +110,14 @@ i {
     vertical-align: middle;
     color: #52565C;
 }
+
+/* nav-center */
+.nav-center {
+    overflow-y: auto;
+}
+
+/* nav-end */
 .nav-end {
-    display: flex;
-    flex-direction: column;
     justify-self: flex-end;
 }
 
@@ -168,6 +165,7 @@ i {
 }
 
 #upgrade a {
+    display: inline-block;
     padding: 10px 20px;
     border-radius: 20px;
     border: 1px solid white;
@@ -176,13 +174,9 @@ i {
     background-color: #090B12;
     transition: transform 0.5s; 
 }
-#upgrade a:hover {
-    transform: scale(1.1);
-}
 
 /* nav-menu */
 #nav-menu {
-    display: flex;
     justify-content: center;
     flex-wrap: wrap;
     padding-top: 100px;
@@ -207,7 +201,6 @@ i {
     margin-bottom: 10px;
 }
 .main-list {
-    display: flex;
     flex-wrap: wrap;
     margin: 30px 0;
 }
@@ -287,7 +280,6 @@ footer {
 }
 
 .play {
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 230px;
@@ -300,8 +292,6 @@ footer {
 }
 
 .play-left-text {
-    display: flex;
-    flex-direction: column;
     margin-right: 5px;
 }
 
@@ -311,8 +301,6 @@ footer {
 
 /* play-center */
 .play-center {
-    display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
     width: 40vw;
@@ -332,9 +320,7 @@ footer {
     padding: 0 20px 0 20px;
 }
 
-
 .play-center-row {
-    display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -354,7 +340,6 @@ footer {
 }
 
 .progressive {
-    display: flex;
     justify-content: flex-end;
     position: absolute;
     top: -1.9px;
@@ -382,7 +367,7 @@ footer {
 
 /* mediaquires */
 @media (max-width: 425px){
-    nav {
+    .xs-menu {
        width: 50px;
     }
 
