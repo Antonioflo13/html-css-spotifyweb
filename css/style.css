@@ -52,6 +52,9 @@ i:hover {
     border:2px solid #90D431;
 }
 
+.xs-menu a:nth-child(2):focus,
+.xs-menu a:nth-child(3):focus,
+.xs-menu a:nth-child(4):focus,
 .md-menu a:nth-child(2):focus,
 .md-menu a:nth-child(3):focus,
 .md-menu a:nth-child(4):focus {
@@ -89,7 +92,7 @@ body {
 
 main {
     width: 100%;
-    height: calc(100vh - 50px);
+    height: calc(100vh - 80px);
     overflow-y: auto;
     background-color: #151A22;
 }
@@ -398,7 +401,7 @@ footer {
     }
 
     .xs-menu a {
-        padding: 2px 0;
+        padding: 2px;
     }
 
     .xs-menu a img:nth-of-type(1) {
